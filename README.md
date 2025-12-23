@@ -1,4 +1,4 @@
-# Beta Hyd - AI Talent Evaluation Platform
+# AI - Agentics Application Tracking System Mini SaaS with AI Agents
 
 This project is a comprehensive AI-powered talent evaluation platform capable of analyzing resumes, GitHub profiles, and LinkedIn profiles to provide a holistic candidate score.
 
