@@ -1,4 +1,4 @@
-# AI - Agentics Application Tracking System Mini SaaS with AI Agents
+# Agentic Talent Engine: A Multi-Agent Framework for 360° Candidate Intelligence
 
 This project is a comprehensive AI-powered talent evaluation platform capable of analyzing resumes, GitHub profiles, and LinkedIn profiles to provide a holistic candidate score.
 
