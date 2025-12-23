@@ -26,7 +26,13 @@ def test_submit_candidate(mock_db):
     mock_db["applications"].insert_one.return_value.inserted_id = "dummy_app_id"
     
     files = {"resume": ("resume.pdf", b"dummy pdf content", "application/pdf")}
-    data = {"job_id": "JOB123", "linkedin": "https://linkedin.com/in/test"}
+    data = {
+        "job_id": "JOB123", 
+        "linkedin": "https://linkedin.com/in/test",
+        "first_name": "Test",
+        "last_name": "User",
+        "email": "test@example.com"
+    }
     
     response = client.post("/candidates", files=files, data=data)
     
