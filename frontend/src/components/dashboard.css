@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.top-nav {
+    height: 60px;
+    background: #020617;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid #1e293b;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-links button {
+    background: none;
+    color: white;
+    border: none;
+    margin: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.user-profile {
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-profile span {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+.user-profile button {
+    background-color: #ef4444;
+    /* Red logout button */
+    color: white;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+}
+
+.user-profile button:hover {
+    background-color: #dc2626;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links button:hover {
+    color: #38bdf8;
+}
+
+.logo:hover {
+    color: #38bdf8;
+}

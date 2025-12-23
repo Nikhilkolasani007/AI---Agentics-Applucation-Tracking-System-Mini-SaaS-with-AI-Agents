@@ -1,0 +1,17 @@
+pymongo
+
+google-genai
+pypdf
+python-dotenv
+requests
+pdfminer.six
+pytesseract
+beautifulsoup4
+PyGithub
+Pillow
+fastapi
+uvicorn
+python-multipart
+pytest
+mongomock
+httpx

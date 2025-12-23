@@ -1,0 +1,15 @@
+--- Database: mern-auth ---
+Users: 1
+Jobs: 4
+Applications: 10
+Candidates: 0
+
+User: kolasani4@gmail.com (ID: 6940449bed829d049703d736)
+
+--- Database: talentdb ---
+Users: 0
+Jobs: 0
+Applications: 10
+Candidates: 0
+
+

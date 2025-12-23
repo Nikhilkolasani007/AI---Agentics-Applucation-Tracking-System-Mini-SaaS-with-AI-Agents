@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+/* =========================
+   Design System (Tokens)
+   ========================= */
+:root {
+  /* Colors */
+  --color-primary: #2563eb;        /* Enterprise Blue */
+  --color-primary-hover: #1d4ed8;
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-border: #e2e8f0;
+  --color-shadow: rgba(15, 23, 42, 0.15);
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  /* Spacing */
+  --space-xs: 6px;
+  --space-sm: 10px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  /* Typography */
+  --font-display: "Nabla", system-ui;
+  --font-body: "Outfit", system-ui, -apple-system, sans-serif;
+
+  /* Shadow */
+  --shadow-lg: 
+    0 20px 25px -5px var(--color-shadow),
+    0 10px 10px -5px rgba(15, 23, 42, 0.04);
+
+  /* Transition */
+  --transition-fast: 0.2s ease;
+}
+
+/* =========================
+   Global Reset
+   ========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  background: linear-gradient(135deg, #f8fafc, #eef2ff);
+  color: var(--color-text-primary);
+}
+
+/* =========================
+   Layout
+   ========================= */
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: var(--space-lg);
+}
+
+/* =========================
+   Card / Sign-In Container
+   ========================= */
+.sign {
+  width: 100%;
+  max-width: 480px;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  border: 1px solid var(--color-border);
+  animation: fadeInUp 0.6s ease;
+}
+
+/* =========================
+   Headings
+   ========================= */
+.sign h1 {
+  font-family: var(--font-display);
+  font-size: 42px;
+  margin: 0;
+}
+
+.sign h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+/* =========================
+   Inputs
+   ========================= */
+.sign input {
+  width: 100%;
+  height: 42px;
+  padding: 0 var(--space-md);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  font-size: 15px;
+  font-family: var(--font-body);
+  transition: border var(--transition-fast),
+              box-shadow var(--transition-fast);
+}
+
+.sign input::placeholder {
+  color: #94a3b8;
+}
+
+.sign input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* =========================
+   Button
+   ========================= */
+.sign button {
+  width: 100%;
+  height: 44px;
+  margin-top: var(--space-sm);
+  border-radius: var(--radius-md);
+  border: none;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-primary-hover)
+  );
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform var(--transition-fast),
+              box-shadow var(--transition-fast),
+              opacity var(--transition-fast);
+}
+
+.sign button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.35);
+}
+
+.sign button:active {
+  transform: translateY(0);
+  opacity: 0.95;
+}
+
+.sign button:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.4);
+}
+
+/* =========================
+   Animations
+   ========================= */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   Responsive
+   ========================= */
+@media (max-width: 480px) {
+  .sign {
+    padding: var(--space-lg);
+  }
+
+  .sign h1 {
+    font-size: 36px;
+  }
+}

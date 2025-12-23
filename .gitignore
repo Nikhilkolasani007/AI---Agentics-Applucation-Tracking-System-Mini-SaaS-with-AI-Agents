@@ -1,0 +1,20 @@
+# System Dependency Directories
+node_modules/
+__pycache__/
+*.py[cod]
+.venv
+.env
+
+# Project Specific
+dist/
+coverage/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

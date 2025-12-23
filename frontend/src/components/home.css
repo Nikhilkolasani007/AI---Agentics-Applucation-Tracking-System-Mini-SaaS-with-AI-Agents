@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+.tittle {
+    font-family: "Nabla", system-ui;
+    font-size: 90px;
+    margin: 0px;
+}
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.home h3 {
+    font-family: "Outfit", sans-serif;
+    margin: 0px;
+    font-size: 30px;
+}
+.homebtn {
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-color: black;
+    background-color: white;
+    box-shadow: 8px 5px 10px red;
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    
+}
